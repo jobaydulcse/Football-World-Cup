@@ -1,0 +1,275 @@
+/* Google Font Style  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+/* Common OR Utilities Style  */
+:root {
+  --h1-font-size: 4.5vw;
+  --h3-font-size: 2.5vw;
+  --h4-font-size: 1.5vw;
+  --h5-font-size: 1.3vw;
+  --p-font-size: 1.3vw;
+  --btn-font-size: 1.5vw;
+  --btn-bg-color: #dd0000;
+  --section-bg-color: #161616;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.d-flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.d-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+p {
+  font-size: var(--p-font-size);
+}
+
+.btn {
+  padding: 1.2vw 1.5vw;
+  font-size: var(--btn-font-size);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#blog {
+  background-color: var(--btn-bg-color);
+}
+
+/* Header Section Style  */
+
+.container {
+  width: 90%;
+  padding: 4vh 0vw;
+  margin: auto;
+}
+
+.top-section {
+  background-color: var(--section-bg-color);
+  border-radius: 30px;
+  padding: 5vw;
+  color: #ffffff;
+}
+
+.half-width {
+  width: 50%;
+  margin-right: 2vw;
+  padding-right: 1vw;
+}
+
+.btn-top {
+  background-color: var(--btn-bg-color);
+  color: white;
+}
+
+.btn-top div {
+  margin-right: 1.5vw;
+}
+
+.top-section img {
+  width: 100%;
+  height: auto;
+}
+.top-section a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.top-section button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 25px;
+  margin-top: 35px;
+  width: 187px;
+  gap: 10px;
+  background: #dd0000;
+  border-radius: 5px;
+  transition: transform 0.6s ease-in 0.1s;
+}
+.fa-angle-right {
+  margin-left: 10px;
+}
+header:hover > .top-section button {
+  transform: translate(900px, -470px);
+}
+/* Blog Section Style  */
+
+.blog-section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.manu {
+  min-width: 250px;
+  margin-right: 1%;
+}
+
+.link-btns {
+  width: 90%;
+  height: 250px;
+  padding: 5%;
+  background-color: var(--section-bg-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-btns .link-btn a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-btns button {
+  width: 100%;
+}
+
+.link-btns a:hover button {
+  background-color: var(--btn-bg-color);
+  transition: 0.2s ease-in;
+}
+
+/* Blogs Section Style  */
+
+.blogs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3vw;
+  row-gap: 3vw;
+}
+
+.blogs-item {
+  box-shadow: 0px 0px 30px rgb(209, 207, 207);
+  border-radius: 10px;
+}
+
+.blogs-item img {
+  width: 100%;
+}
+
+article {
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+article button {
+  padding: 0.4vw 1vw;
+  border-radius: 5px;
+  font-size: var(--btn-font-size);
+}
+
+article .footer {
+  width: 60%;
+  color: rgba(22, 22, 22, 0.7);
+}
+
+.icon-area {
+  width: 40%;
+}
+
+/* "View All" Section Style  */
+
+.view-all-section {
+  width: 100%;
+  margin-bottom: 5vh;
+  display: none;
+}
+
+.view-all-section div {
+  display: flex;
+  justify-content: center;
+}
+
+.view-all-section .btn {
+  color: white;
+  background-color: var(--btn-bg-color);
+}
+
+/* Footer Section Style  */
+footer {
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  background-color: var(--section-bg-color);
+}
+
+.goal-area {
+  color: #ffffff;
+}
+
+.goal-area h3 {
+  text-align: center;
+}
+
+hr {
+  margin: 5vh 5vw;
+  color: #b9b9b9;
+  opacity: 0.2;
+}
+
+.footer-link-area {
+  width: 70%;
+  margin: auto;
+}
+
+.footer-link-area a {
+  color: #b9b9b9;
+  text-decoration: none;
+  font-size: var(--p-font-size);
+}
+
+.social-icon {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.social-icon a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 2vw;
+}
+.fa-facebook-square,
+.fa-youtube-square,
+.fa-twitter-square {
+  color: #eeebeb;
+  cursor: pointer;
+  padding-left: 30px;
+}
+.fa-facebook-square:hover {
+  color: rgb(180, 74, 74);
+}
+
+.fa-youtube-square:hover {
+  color: rgb(248, 110, 5);
+}
+.fa-twitter-square:hover {
+  color: red;
+}
